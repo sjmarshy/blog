@@ -6,13 +6,29 @@ const BigP = styled.p`
     font-size: 88px;
 `;
 
-const IndexPage = () => (
+const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => (
     <div>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <BigP>I wonder if we can use styled-components...</BigP>
-        <Link to="/page-2/">Go to page 2</Link>
+        {edges.map(({ node }) => (
+            <Link key={node.id} to={node.frontmatter.path}>
+                {node.frontmatter.title}
+            </Link>
+        ))}
     </div>
 );
 
 export default IndexPage;
+export const pageQuery = graphql`
+    query IndexQuery {
+        allMarkdownRemark {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        path
+                        title
+                    }
+                }
+            }
+        }
+    }
+`;
