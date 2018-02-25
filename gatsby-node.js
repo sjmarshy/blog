@@ -11,6 +11,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     const { createPage } = boundActionCreators;
 
     const blogPostTemplate = path.resolve('src/layouts/blog-post.js');
+    const wordCountTemplate = path.resolve('src/layouts/word-count.js');
 
     return graphql(`
         {
@@ -23,6 +24,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
                         excerpt(pruneLength: 250)
                         html
                         id
+                        wordCount {
+                            words
+                        }
                         frontmatter {
                             date
                             path
@@ -34,7 +38,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
     `).then(result => {
         if (result.errors) {
-            return Promise.reject(result.errors);
+            return Promise.reject(
+                result.errors.map(e => e.message).reduce((a, b) => `${a} ${b}`)
+            );
         }
 
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
@@ -47,6 +53,18 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             };
 
             createPage(data);
+        });
+
+        const totalPublishedWordCount = result.data.allMarkdownRemark.edges
+            .map(({ node }) => node.wordCount.words)
+            .reduce((a, b) => a + b);
+
+        createPage({
+            path: '/wordcount',
+            component: wordCountTemplate,
+            context: {
+                count: totalPublishedWordCount,
+            },
         });
 
         return Promise.resolve();
