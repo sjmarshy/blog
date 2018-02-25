@@ -78,7 +78,7 @@ body {
     padding: 20px 25px;
     font-size: 16px;
     color: #6D6D6D;
-    font-family: Georgia, Cambria, Times, serif;
+    font-family: 'Merriweather', Georgia, Cambria, Times, serif;
     line-height: 1.2rem;
     letter-spacing: 0.03rem;
 }
@@ -118,7 +118,12 @@ const TemplateWrapper = ({ children }) => (
             meta={[
                 { name: 'description', content: 'The blog of Sam Marshall' },
             ]}
-        />
+        >
+            <link
+                href="https://fonts.googleapis.com/css?family=Merriweather"
+                rel="stylesheet"
+            />
+        </Helmet>
         <TitleLink to="/">
             <Title>sjm is typing...</Title>
         </TitleLink>
