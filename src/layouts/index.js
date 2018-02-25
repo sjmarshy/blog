@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import Link from 'gatsby-link';
 
 import monoidBold from '../fonts/Monoid-Bold.ttf';
 import monoidItalic from '../fonts/Monoid-Italic.ttf';
@@ -69,21 +70,38 @@ table {
     font-weight: 400;
 }
 
-body {
-
-    padding: 20px 25px;
+h1,h2,h3,h4,h5,h6 {
     font-family: Monoid-Regular, monospace;
-    font-size: 12px;
+}
+
+body {
+    padding: 20px 25px;
+    font-size: 16px;
     color: #6D6D6D;
+    font-family: Georgia, Cambria, Times, serif;
+    line-height: 1.2rem;
+    letter-spacing: 0.03rem;
+}
+
+a {
+    color: #3f51b5;
+}
+
+a:visited {
+    color: #00bcd4;
 }
 `;
 
 const PageWrapper = styled.div``;
 
+const TitleLink = styled(Link)`
+    text-decoration: none;
+`;
+
 const Title = styled.h1`
     font-size: 24px;
     font-family: Monoid-Bold, monospace;
-    color: black;
+    color: #ff5722;
     padding-bottom: 32px;
 `;
 
@@ -98,11 +116,12 @@ const TemplateWrapper = ({ children }) => (
         <Helmet
             title="sjm is typing..."
             meta={[
-                { name: 'description', content: 'Sample' },
-                { name: 'keywords', content: 'sample, something' },
+                { name: 'description', content: 'The blog of Sam Marshall' },
             ]}
         />
-        <Title>sjm is typing...</Title>
+        <TitleLink to="/">
+            <Title>sjm is typing...</Title>
+        </TitleLink>
         <Posts>{children()}</Posts>
     </PageWrapper>
 );

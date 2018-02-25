@@ -2,14 +2,11 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
-const BigP = styled.p`
-    font-size: 88px;
-`;
-
 const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => (
     <div>
         {edges.map(({ node }) => (
-            <Link key={node.id} to={node.frontmatter.path}>
+            <Link key={node.frontmatter.path} to={node.frontmatter.path}>
+                {new Date(node.frontmatter.date).toDateString()} -{' '}
                 {node.frontmatter.title}
             </Link>
         ))}
@@ -26,6 +23,7 @@ export const pageQuery = graphql`
                     frontmatter {
                         path
                         title
+                        date
                     }
                 }
             }

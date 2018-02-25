@@ -23,8 +23,16 @@ const PostTitle = styled.h2`
 `;
 
 const Post = styled.section`
+    font-size: 16px;
+    max-width: 700px;
+
     p {
         padding: 16px 0;
+        color: rgba(10, 10, 10, 1);
+    }
+
+    h2 {
+        color: black;
     }
 `;
 
@@ -35,6 +43,7 @@ function Template({ data }) {
             <Helmet title={post.frontmatter.title} />
             <div>
                 <PostTitle>{post.frontmatter.title}</PostTitle>
+                <p>{new Date(post.frontmatter.date).toDateString()}</p>
                 <Post
                     dangerouslySetInnerHTML={{
                         __html: post.html,
