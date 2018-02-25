@@ -78,7 +78,7 @@ body {
     padding: 20px 25px;
     font-size: 16px;
     color: #6D6D6D;
-    font-family: 'Merriweather', Georgia, Cambria, Times, serif;
+    font-family: 'Merriweather', Georgia, Cambria, Times, serif !important;
     line-height: 1.2rem;
     letter-spacing: 0.03rem;
 }

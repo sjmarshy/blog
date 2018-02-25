@@ -1,6 +1,11 @@
 import React from 'react';
+import { get } from 'lodash/fp';
 
-function Template({ pageResources: { json: { pathContext: { count } } } }) {
+function Template(props) {
+    const count =
+        get('pageResources.json.pathContext.count', props) ||
+        get('pathContext.count', props) ||
+        0;
     return (
         <p>
             The total published wordcount is:{' '}

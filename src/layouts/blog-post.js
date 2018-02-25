@@ -31,7 +31,11 @@ const Post = styled.section`
         color: rgba(10, 10, 10, 1);
     }
 
-    h2 {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: black;
     }
 `;
