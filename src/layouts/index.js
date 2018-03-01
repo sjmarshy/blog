@@ -125,8 +125,13 @@ const TemplateWrapper = ({ children }) => (
             />
         </Helmet>
         <TitleLink to="/">
-            <Title>sjm is typing...</Title>
+            <Title>"sjm is typing..."</Title>
         </TitleLink>
+        <h4>
+            (A Blog by <a href="sjm.computer">Sam Marshall</a>)
+        </h4>
+        <br />
+        <br />
         <Posts>{children()}</Posts>
     </PageWrapper>
 );
