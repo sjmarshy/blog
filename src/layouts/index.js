@@ -128,7 +128,7 @@ const TemplateWrapper = ({ children }) => (
             <Title>"sjm is typing..."</Title>
         </TitleLink>
         <h4>
-            (A Blog by <a href="sjm.computer">Sam Marshall</a>)
+            (A Blog by <a href="https://sjm.computer">Sam Marshall</a>)
         </h4>
         <br />
         <br />
