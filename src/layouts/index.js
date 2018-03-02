@@ -90,6 +90,16 @@ a {
 a:visited {
     color: #00bcd4;
 }
+
+code {
+    background-color: #37474F;
+    color: #EEEEEE;
+    padding: 3px;
+}
+
+a code {
+    color: #B3E5FC;
+}
 `;
 
 const PageWrapper = styled.div``;
