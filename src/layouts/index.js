@@ -91,7 +91,7 @@ a:visited {
     color: #00bcd4;
 }
 
-code {
+code, pre {
     background-color: #37474F;
     color: #EEEEEE;
     padding: 3px;
