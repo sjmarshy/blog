@@ -100,6 +100,10 @@ code, pre {
 a code {
     color: #B3E5FC;
 }
+
+img {
+    width: 65vw;
+}
 `;
 
 const PageWrapper = styled.div``;
