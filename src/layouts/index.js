@@ -101,6 +101,12 @@ a code {
     color: #B3E5FC;
 }
 
+blockquote {
+    background: #CFD8DC;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
 img {
     width: 65vw;
 }
