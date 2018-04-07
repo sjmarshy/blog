@@ -1,5 +1,5 @@
 ---
-date: "2018-04-07T1643"
+date: "2018-04-07T16:43"
 path: "/201804071643"
 title: "Incremental Growth"
 tags:
