@@ -8,7 +8,7 @@ tags:
     - "#personal"
 ---
 
-![incremental-growth](/201804081643/title.png)
+![incremental-growth](/201804071643/title.png)
 
 Hopefully, none of this sounds *too* self-helpey.
 
