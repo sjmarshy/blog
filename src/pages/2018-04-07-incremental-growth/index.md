@@ -18,7 +18,7 @@ This is expressed in a different way by Carl Jung:
 
 For me, the use  of the word 'outgrown' sparks images of organic processes, nature, plants. I don't want to do the classic 'trees can crack pavements' thing, but when looked at this way it's hard to accept growth as anything other than a gradual, incremental process.
 
-![incremental-growth](/201804071643/title.png)
+<img src="/201804071643/title.png" alt="incremental-growth" style="width: 100%" />
 
 I've been thinking about an incremental appraoch to things for a long time, and this is a sort of checkpoint for me. an affirmation that I still believe in this idea. It's still true, for me. 
 
