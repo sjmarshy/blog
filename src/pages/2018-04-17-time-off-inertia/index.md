@@ -7,7 +7,7 @@ tags:
     - "#personal"
 ---
 
-Whenever I take some time off work, there's maybe four or five days where it's incredibly divfficult for me to do what I actually want to do. Note the use of the word *actually* - it's easy enough for me to do what I *immediately* want to do, but not what long-term thinker me wants to do. In other words, my [Reflective Control](http://sebastianmarshall.com/reflective-control) is low.
+Whenever I take some time off work, there's maybe four or five days where it's incredibly difficult for me to do what I actually want to do. Note the use of the word *actually* - it's easy enough for me to do what I *immediately* want to do, but not what long-term thinker me wants to do. In other words, my [Reflective Control](http://sebastianmarshall.com/reflective-control) is low.
 
 The only solution I've found for this slump is to just get through it. If I want to get anywhere long-term sam wants to go, then I' need more time off then I'll waste playing games and feeling fluffy-headed.
 
