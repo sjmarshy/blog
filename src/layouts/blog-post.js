@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
+import format from 'date-fns/format';
 
 export const pageQuery = graphql`
     query BPBP($path: String!) {
@@ -15,45 +16,24 @@ export const pageQuery = graphql`
     }
 `;
 
-const PostTitle = styled.h2`
-    font-size: 16px;
-    font-family: Monoid-Bold, monospace;
-    color: black;
-    padding-bottom: 16px;
-`;
+const PostTitle = styled.h2``;
 
-const Post = styled.section`
-    font-size: 16px;
-    max-width: 700px;
-
-    p {
-        padding: 16px 0;
-        color: rgba(10, 10, 10, 1);
-    }
-
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: black;
-    }
-`;
+const Post = styled.section``;
 
 function Template({ data }) {
     const { markdownRemark: post } = data;
     return (
         <div>
             <Helmet title={post.frontmatter.title} />
-            <div>
+            <article>
                 <PostTitle>{post.frontmatter.title}</PostTitle>
-                <p>{new Date(post.frontmatter.date).toDateString()}</p>
+                <p>{format(new Date(post.frontmatter.date), 'YYYY MM DD')}</p>
                 <Post
                     dangerouslySetInnerHTML={{
                         __html: post.html,
                     }}
                 />
-            </div>
+            </article>
         </div>
     );
 }

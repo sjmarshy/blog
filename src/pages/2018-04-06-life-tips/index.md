@@ -8,10 +8,6 @@ Note: This list will get updated sometimes - the URL will stay the same, but the
 
 Sometimes I write down daft ideas designed to help no-one. I thought I'd put some of my favourites up here:
 
-<br/>
-<br/>
-<br/>
-
 ## 01
 
 Struggling to come up with a password? Ask your enemies for ideas, they'll think of stuff you never would
