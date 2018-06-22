@@ -6,7 +6,7 @@ tags:
     - "#development"
 ---
 
-`The toolbox` is a metaphor used in software development. It refers to a persons knowledge of approaches they can apply. This refers to more than literal software tools. Instead, it is meant to represent all of the patterns, libraries, techniques that you know. It can even be extended to ways of documenting or thinking about your code.
+`The toolbox` is a [metaphor](/201806071745) used often in software development. It refers to a persons knowledge of approaches they can apply. This refers to more than only literal software tools. It is also meant to represent all of the patterns, libraries, techniques and, well, everything that you _know_.
 
 <img src="/201805281342/toolbox.png" alt="a toolbox" />
 
