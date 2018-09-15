@@ -20,6 +20,7 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => (
             <h2>posts</h2>
             <ul>
                 {edges
+                    .filter(post => !post.node.frontmatter.draft)
                     .sort(
                         (a, b) =>
                             new Date(b.node.frontmatter.date).valueOf() -
@@ -52,6 +53,7 @@ export const pageQuery = graphql`
                         path
                         title
                         date
+                        draft
                     }
                 }
             }

@@ -1,7 +1,8 @@
 ---
 date: "2018-08-04T12:43"
 path: '/not-there-yet'
-title: "Monthly Playlist"
+title: "Not There Yet"
+draft: true
 tags: 
     - "#personal"
     - "#incrementalism"
