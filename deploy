@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+now alias $1 blog.sjm.codes
