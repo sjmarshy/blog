@@ -12,4 +12,4 @@ If you think about where to plant your ideas (external representations - I use [
 
 Sure, if you let the seeds fly about and do what they want, some stuff will grow - but why leave it to chance?
 
-Any other [favourite metaphors](https://blog.sjm.computer/201804071643) for me to mess up? Let me know!
+Any other [favourite metaphors](https://blog.sjm.codes/201804071643) for me to mess up? Let me know!

@@ -1,4 +1,4 @@
-# blog.sjm.computer
+# blog.sjm.codes
 
 ## Goals:
 

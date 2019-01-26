@@ -8,7 +8,7 @@ tags:
     - "#writing"
 ---
 
-I've been following [some common advice](http://paulgraham.com/talk.html) since I started writing on this blog [more](https://blog.sjm.computer/201805061702). I've been reading my posts out loud before publishing them. This is basically [restating the Paul Graham article in my own words](https://blog.sjm.computer/201805012038), because restating things that you know is important...And because it's my blog. 
+I've been following [some common advice](http://paulgraham.com/talk.html) since I started writing on this blog [more](https://blog.sjm.codes/201805061702). I've been reading my posts out loud before publishing them. This is basically [restating the Paul Graham article in my own words](https://blog.sjm.codes/201805012038), because restating things that you know is important...And because it's my blog.
 
 The main idea is that you can express complicated ideas in simple sentences, but it's hard to do in writing. You can simplify any writing by imagining you're talking to someone you know and reading out loud. I feel like this is making a huge difference to my writing. It's also making it feel way less formal - which is amazing because I don't want to sound formal. I'm not a formal person, but my writing often heads in that direction.
 
