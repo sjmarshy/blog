@@ -8,8 +8,6 @@ tags:
     - "#incrementalism"
 ---
 
-# Slow Thinking
-
 It’s hard to learn new stuff - but it’s an important part of both my job and my hobbies. I have a full time job. I believe in the importance of time to relax. I have a broad range of interests. It can be difficult to find time to learn and do all the things that I want to, because everything gets in the way of everything else.
 
 I noticed that even when I only looked at things a little at a time, if I approached it right then understanding would still trickle in over time. I didn’t have to set aside entire weekends to tackle something new, I could spend half an hour a few times a week instead and I’d still get it done.
